@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Inderjeet Cheema">
+    <meta name="description" content="My First Web Project">
+    <meta name="keywords" content="HTMl, CSS, SEO. Web, Web Develop">
+    <title> Assignment 5</title>
+    <link rel="shortcut icon" href="assets/img/Favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/style/index.css" media="all">
+    <script src="assets/script/index.js" defer></script> 
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container flexbox">
+                <div class="title">
+                    <h1>Converter</h1>
+                </div>
+                <nav class="navmenu">
+                    <ul>
+                        <li class="mobile-menu"><i class="fa-solid fa-bars"></i></li>
+                        <li class="menu underline"><a href="index.html">Home</a></li>
+                        <li class="menu"><a href="#row">Projects</a></li>
+                        <li class="menu"><a href="about.html">About</a></li>
+                        <li class="menu"><a href="contact.html" class="btn-menu">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="dark-mode">
+            <div class="container flexbox">
+
+                <div class="calculator">
+                    <h2>Temperature Converter</h2>
+
+                    <form name="calc">
+                        <input type="text" name="one" class="number-one" placeholder="Enter any number">
+                        <input type="radio" class="c2f" name="fav_language" value="HTML">
+                        <label for="html" class="my-label">To Fahrenheit</label><br>
+                        <input type="radio" class="f2c" name="fav_language" value="CSS">
+                        <label for="css" class="my-label1">To Celsius</label><br>
+                        <input type="button" class="get-result" value="Convert">
+                    </form>
+                    <section class="output">
+                        <p></p>
+                    </section>
+                    <input type="button" class="mode" value="Light Mode">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

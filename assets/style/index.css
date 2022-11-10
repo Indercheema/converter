@@ -1,0 +1,203 @@
+@import "./reset.css";
+@import "./header.css";
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+   }
+
+/* -------------------------------*/
+/* header                         */
+/* -------------------------------*/
+
+li.underline a {
+    text-decoration: underline;
+    text-decoration-color: #3865FF;
+}
+
+
+
+.dark-mode {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--app-dark-bg);
+}
+
+
+/* -------------------------------*/
+/* Converter                      */
+/* -------------------------------*/
+
+
+body, p {
+    transition: all 0.25s ease-in-out;
+}
+
+
+h1, h2, h3, a, p, label {
+    color: white;
+}
+
+
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn {
+
+    line-height: 60px;
+    width:240px;
+    bottom: 60px;
+    border:2px solid;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--app-blue);
+
+}
+
+.btn-one:hover {
+    background-color: var(--app-blue-hover);
+}
+
+.calculator {
+    width: 360px;
+  }
+
+
+   
+  
+  form {
+    margin-top: 20px;
+    width: 100%;
+    text-align: right;
+  }
+  
+   
+  
+  input[type="text"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+  }
+  
+    
+  input[type="radio"] {
+    padding: 0 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+  }
+   
+  
+  form input + input {
+    margin-top: 20px;
+  }
+  
+   
+  
+  input:focus {
+    border: 1px solid rgba(255, 255, 255, .25);
+
+}
+  
+   
+  
+input[type="button"] {
+  width: 120px;
+  height: 46px;
+  text-align: center;
+  background-color: var(--app-blue);
+  border: 1px solid var(--app-blue);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+}
+
+ 
+
+input[type="button"]:hover {
+  background-color: var(--app-blue-hover);
+}
+
+ 
+
+.output {
+  margin-top: 40px;
+  height: 52px;
+  padding: 0 15px;
+  border-radius: 4px;
+  background-color: rgb(0 0 0 / 0.2);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) inset, -1px -1px 1px 0 rgba(255, 255, 255, 0.1) inset;
+  text-align: left;
+}
+
+ 
+
+.output p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #f2f4f6;
+  line-height: 52px;
+  cursor: default;
+}
+
+
+
+
+/* -------------------------------*/
+/* Mode change                    */
+/* -------------------------------*/
+
+.mode {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.light-mode {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.h22, .label-dark, .form-dark , p.dark{
+    color: #000;
+}
+
+input[type="text"].number-dark {
+    color: #000;
+    border-color: #080808;
+}
+
+
+
+
+
